@@ -1,0 +1,5 @@
+OBS: time displayed will be in BRT timezone (UTC-03:00), date format is dd/mm/yyyy
+
+06/07/2024: finished setting up the mod repository in github
+
+08/07/2024: added the basic glamothium item, the mod's creative mode tab and the required textures and localisation
