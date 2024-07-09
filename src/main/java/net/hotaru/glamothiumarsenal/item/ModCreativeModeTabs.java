@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GlamothiumArsenal.MODID);
 
-    public static final RegistryObject<CreativeModeTab> GLAMOTHIUM_TAB = CREATIVE_MODE_TABS.register("glamothium_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GLAMOTHIUM.get())).title(Component.translatable("creativetab.glamothium_tab")).displayItems((pParameters, pOutput) -> {pOutput.accept(ModItems.GLAMOTHIUM.get());}).build());
+    public static final RegistryObject<CreativeModeTab> GLAMOTHIUM_TAB = CREATIVE_MODE_TABS.register("glamothium_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GLAMOTHIUM.get())).title(Component.translatable("creativetab.glamothium_tab")).displayItems((pParameters, pOutput) -> {pOutput.accept(ModItems.GLAMOTHIUM.get()); pOutput.accept(ModItems.GLAMOTHIUM_HELMET.get()); pOutput.accept(ModItems.GLAMOTHIUM_CHESTPLATE.get()); pOutput.accept(ModItems.GLAMOTHIUM_LEGGINGS.get()); pOutput.accept(ModItems.GLAMOTHIUM_BOOTS.get());}).build());
 
     public static void register(IEventBus eventBus)
     {
