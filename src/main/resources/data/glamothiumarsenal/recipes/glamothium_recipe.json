@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "IIR",
+    "IDR",
+    "IRR"
+  ],
+  "result": {
+    "item": "glamothiumarsenal:glamothium"
+  },
+  "show_notification": true
+}
