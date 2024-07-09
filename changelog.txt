@@ -6,3 +6,4 @@ OBS: time displayed will be in BRT timezone (UTC-03:00), date format is dd/mm/yy
 08/07/2024:
 - added the basic glamothium item along with the mod's creative mode tab and the required textures and localisation
 - added the crafting recipe of glamothium
+- added the iron cavalry armor set, with its recipes and textures (textures probably subject to changes in the future)
