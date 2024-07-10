@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "glamothiumarsenal:glamothium"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " GG",
+    " SG",
+    " S "
+  ],
+  "result": {
+    "item": "glamothiumarsenal:glamothium_axe"
+  },
+  "show_notification": false
+}

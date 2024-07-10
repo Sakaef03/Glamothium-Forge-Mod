@@ -1,8 +1,7 @@
 package net.hotaru.glamothiumarsenal.item;
 
 import net.hotaru.glamothiumarsenal.GlamothiumArsenal;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,7 +18,17 @@ public class ModItems {
 
     public static final RegistryObject<Item> GLAMOTHIUM_LEGGINGS = ITEMS.register("glamothium_leggings", () -> new ArmorItem(ModArmorMaterials.GLAMOTHIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
-    public static final RegistryObject<Item> GLAMOTHIUM_BOOTS= ITEMS.register("glamothium_boots", () -> new ArmorItem(ModArmorMaterials.GLAMOTHIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> GLAMOTHIUM_BOOTS = ITEMS.register("glamothium_boots", () -> new ArmorItem(ModArmorMaterials.GLAMOTHIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLAMOTHIUM_PICKAXE = ITEMS.register("glamothium_pickaxe", () -> new PickaxeItem(ModToolTiers.GLAMOTHIUM, 1, 1, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLAMOTHIUM_AXE = ITEMS.register("glamothium_axe", () -> new AxeItem(ModToolTiers.GLAMOTHIUM, 7, 1, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLAMOTHIUM_SWORD = ITEMS.register("glamothium_sword", () -> new SwordItem(ModToolTiers.GLAMOTHIUM, 4, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLAMOTHIUM_SHOVEL = ITEMS.register("glamothium_shovel", () -> new ShovelItem(ModToolTiers.GLAMOTHIUM, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLAMOTHIUM_HOE = ITEMS.register("glamothium_hoe", () -> new HoeItem(ModToolTiers.GLAMOTHIUM, 0, 0, new Item.Properties()));
 
     public static void register(IEventBus eventBus)
     {
