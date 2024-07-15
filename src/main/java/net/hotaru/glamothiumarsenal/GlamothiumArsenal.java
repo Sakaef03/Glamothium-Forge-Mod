@@ -1,8 +1,11 @@
 package net.hotaru.glamothiumarsenal;
 
 import com.mojang.logging.LogUtils;
+import net.hotaru.glamothiumarsenal.entity.ModEntities;
+import net.hotaru.glamothiumarsenal.entity.client.GnawStingRenderer;
 import net.hotaru.glamothiumarsenal.item.ModCreativeModeTabs;
 import net.hotaru.glamothiumarsenal.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +38,8 @@ public class GlamothiumArsenal
 
         modEventBus.addListener(this::commonSetup);
 
+        ModEntities.register(modEventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
@@ -65,7 +70,7 @@ public class GlamothiumArsenal
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.GNAWSTING.get(), GnawStingRenderer::new);
         }
     }
 }

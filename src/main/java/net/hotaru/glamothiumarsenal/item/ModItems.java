@@ -1,7 +1,9 @@
 package net.hotaru.glamothiumarsenal.item;
 
 import net.hotaru.glamothiumarsenal.GlamothiumArsenal;
+import net.hotaru.glamothiumarsenal.entity.ModEntities;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -29,6 +31,8 @@ public class ModItems {
     public static final RegistryObject<Item> GLAMOTHIUM_SHOVEL = ITEMS.register("glamothium_shovel", () -> new ShovelItem(ModToolTiers.GLAMOTHIUM, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> GLAMOTHIUM_HOE = ITEMS.register("glamothium_hoe", () -> new HoeItem(ModToolTiers.GLAMOTHIUM, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> GNAWSTING_SPAWN_EGG = ITEMS.register("gnawsting_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.GNAWSTING, 0x665199, 0xfe71fe, new Item.Properties()));
 
     public static void register(IEventBus eventBus)
     {

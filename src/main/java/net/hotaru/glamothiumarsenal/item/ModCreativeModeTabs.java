@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
         pOutput.accept(ModItems.GLAMOTHIUM_SHOVEL.get());
         pOutput.accept(ModItems.GLAMOTHIUM_HOE.get());
         pOutput.accept(ModItems.GLAMOTHIUM_SWORD.get());
+        pOutput.accept(ModItems.GNAWSTING_SPAWN_EGG.get());
     }).build());
 
     public static void register(IEventBus eventBus)
